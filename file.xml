@@ -1,2 +1,6 @@
 <?xml version="1.0"?>
-<title>Introduction to</title>
+<library>
+    <book>
+        <title>Introduction to Algorithms</title>
+    </book>
+</library>

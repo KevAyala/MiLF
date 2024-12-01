@@ -36,8 +36,7 @@ def p_attributes(p):
 
 def p_content(p):
     '''content : TEXT
-               | element
-               | NAME'''
+               | element'''
     p[0] = p[1]
 
 def p_error(p):

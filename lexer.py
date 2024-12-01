@@ -19,7 +19,7 @@ def t_STRING(t):
 
 # Text content
 def t_TEXT(t):
-    r'^[A-Za-z0-9 ]+$'
+    r'(?<=>)[^><]+(?=<)'
     return t
 
 # Tag names and attribute names
