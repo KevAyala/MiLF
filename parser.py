@@ -35,9 +35,17 @@ def p_attributes(p):
         p[0] = p[1] + p[2] + p[3]
 
 def p_content(p):
-    '''content : TEXT
-               | element'''
-    p[0] = p[1]
+    '''content : content TEXT
+               | content element
+               | TEXT
+               | element
+               | '''
+    if len(p) == 1:  # Empty content
+        p[0] = []
+    elif len(p) == 2:  # Single TEXT or element
+        p[0] = p[1]
+    else:  # Multiple TEXT or elements
+        p[0] = p[1] + p[2]
 
 def p_error(p):
     print(f"Syntax error at {p.value if p else 'EOF'}")
