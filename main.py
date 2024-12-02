@@ -1,5 +1,6 @@
 import lexer  # Import lexer implementation
 import parser  # Import parser implementation
+import csv
 
 def read_xml_file(file_path):
     """Reads an XML file and returns its content as a string."""
@@ -23,7 +24,12 @@ def main():
     
     # Step 3: Display Parse Tree
     print("\n=== Parse Tree ===")
-    print(parse_result)
+    res = parse_result.split(",")
+    print(res)
+    
+    with(open('movies.csv', 'w')) as file:
+        writer = csv.writer(file)
+        writer.writerow(res)
 
 if __name__ == "__main__":
     main()

@@ -1,8 +1,33 @@
-<?xml version="1.0"?>
-<library>
-    <book>
-        <title>Introduction to Algorithms</title>
-        <author>Thomas H. Cormen</author>
-        <year>2009</year>
-    </book>
-</library>
+<?xml version="1.0" encoding="UTF-8"?>
+<movies>
+    <movie>
+        <title>The Nightmare Before Christmas</title>
+        <director>Henry Selick</director>
+        <year>1993</year>
+        <genre>Musical</genre>
+        <duration>76</duration>
+        <rating>8.0</rating>
+        <language>English</language>
+        <actor>Chris Sarandon</actor>
+    </movie>
+    <movie>
+        <title>The Nightmare Before Christmas</title>
+        <director>Henry Selick</director>
+        <year>1993</year>
+        <genre>Musical</genre>
+        <duration>76</duration>
+        <rating>8.0</rating>
+        <language>English</language>
+        <actor>Chris Sarandon</actor>
+    </movie>
+    <movie>
+        <title>The Nightmare Before Christmas</title>
+        <director>Henry Selick</director>
+        <year>1993</year>
+        <genre>Musical</genre>
+        <duration>76</duration>
+        <rating>8.0</rating>
+        <language>English</language>
+        <actor>Chris Sarandon</actor>
+    </movie>
+</movies>
