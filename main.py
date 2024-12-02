@@ -1,5 +1,5 @@
-import lexer  # Import lexer implementation
-import parser  # Import parser implementation
+import lexer 
+import parser
 import csv
 
 def read_xml_file(file_path):
@@ -8,28 +8,21 @@ def read_xml_file(file_path):
         return file.read()
 
 def main():
-    # Example: Read XML content from a file
-    file_path = "file.xml"  # Update this path if necessary
+    file_path = "file.xml"
     xml_content = read_xml_file(file_path)
     
-    # Step 1: Lexical Analysis (Tokenization)
     print("\n=== Tokenizing XML ===")
     lexer.lexer.input(xml_content)
     for token in lexer.lexer:
         print(token)
-    
-    # Step 2: Parsing XML
-    print("\n=== Parsing XML ===")
+
     parse_result = parser.parser.parse(xml_content, lexer=lexer.lexer)
-    
-    # Step 3: Display Parse Tree
-    print("\n=== Parse Tree ===")
-    res = parse_result.split(",")
-    print(res)
-    
-    with(open('movies.csv', 'w')) as file:
+    print(parse_result)
+
+    with open("movies.csv", mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow(res)
+        writer.writerow(['Title', 'Director', 'Year', 'Genre', 'Duration', 'Rating', 'Language', 'Actor'])
+        writer.writerows(parse_result)
 
 if __name__ == "__main__":
     main()

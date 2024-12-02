@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <movies>
     <movie>
         <title>The Nightmare Before Christmas</title>
@@ -10,24 +9,224 @@
         <language>English</language>
         <actor>Chris Sarandon</actor>
     </movie>
+    
     <movie>
-        <title>The Nightmare Before Christmas</title>
-        <director>Henry Selick</director>
-        <year>1993</year>
-        <genre>Musical</genre>
-        <duration>76</duration>
-        <rating>8.0</rating>
+        <title>Whiplash</title>
+        <director>Damien Chazelle</director>
+        <year>2014</year>
+        <genre>Drama</genre>
+        <duration>107</duration>
+        <rating>8.5</rating>
         <language>English</language>
-        <actor>Chris Sarandon</actor>
+        <actor>Miles Teller</actor>   
     </movie>
+
     <movie>
-        <title>The Nightmare Before Christmas</title>
-        <director>Henry Selick</director>
-        <year>1993</year>
-        <genre>Musical</genre>
-        <duration>76</duration>
+        <title>Corpse Bride</title>
+        <director>Tim Burton</director>
+        <year>2005</year>
+        <genre>Romance</genre>
+        <duration>77</duration>
+        <rating>7.3</rating>
+        <language>English</language>
+        <actor>Johnny Depp</actor>  
+    </movie>
+
+    <movie>
+        <title>Y Tu Mamá También</title>
+        <director>Alfonso Cuarón</director>
+        <year>2001</year>
+        <genre>Drama</genre>
+        <duration>106</duration>
+        <rating>7.6</rating>
+        <language>Spanish</language>
+        <actor>Maribel Verdú</actor>  
+    </movie>
+
+    <movie>
+        <title>Legend</title>
+        <director>Brian Helgeland</director>
+        <year>2015</year>
+        <genre>Crime</genre> 
+        <duration>131</duration>
+        <rating>7.0</rating>
+        <language>English</language>
+        <actor>Tom Hardy</actor>     
+    </movie>
+
+    <movie>
+        <title>Past Lives</title>
+        <director>Celine Song</director>
+        <year>2023</year>
+        <genre>Romance</genre>
+        <duration>106</duration>
         <rating>8.0</rating>
         <language>English</language>
-        <actor>Chris Sarandon</actor>
+        <actor>Greta Lee</actor>     
+    </movie>
+
+    <movie>
+        <title>Jumper</title>
+        <director>Doug Liman</director>
+        <year>2008</year>
+        <genre>Action</genre>
+        <duration>88</duration>
+        <rating>6.1</rating>
+        <language>English</language>
+        <actor>Rachel Bilson</actor> 
+    </movie>
+
+    <movie>
+        <title>Silenced</title>
+        <director>Lee Hwan-kyung</director>
+        <year>2011</year>
+        <genre>History</genre>
+        <duration>125</duration>
+        <rating>8.1</rating>
+        <language>Korean</language>
+        <actor>Gong Yoo</actor>
+    </movie>
+
+    <movie>
+        <title>The Zone of Interest</title>
+        <director>Jonathan Glazer</director>
+        <year>2023</year>
+        <genre>Thriller</genre>
+        <duration>107</duration>
+        <rating>8.4</rating>
+        <language>English</language>
+        <actor>Johanna Laco</actor>
+    </movie>
+
+    <movie>
+        <title>Under the Silver Lake</title>
+        <director>David Robert Mitchell</director>
+        <year>2018</year>
+        <genre>Comedy</genre>
+        <duration>139</duration>
+        <rating>6.5</rating>
+        <language>English</language>
+        <actor>Andrew Garfield</actor>  
+    </movie>
+
+    <movie>
+        <title>Django Unchained</title>
+        <director>Quentin Tarantino</director>
+        <year>2012</year>
+        <genre>Western</genre>
+        <duration>165</duration>
+        <rating>8.4</rating>
+        <language>English</language>
+        <actor>Leonardo DiCaprio</actor>
+    </movie>
+
+    <movie>
+        <title>About Time</title>
+        <director>Richard Curtis</director>
+        <year>2013</year>
+        <genre>Fantasy</genre>
+        <duration>123</duration>
+        <rating>7.8</rating>
+        <language>English</language>
+        <actor>Domhnall Gleeson</actor>   
+    </movie>
+
+    <movie>
+        <title>Senna</title>
+        <director>Asif Kapadia</director>
+        <year>2010</year>
+        <genre>Documentary</genre>
+        <duration>106</duration>
+        <rating>8.5</rating>
+        <language>English</language>
+        <actor>Frank Williams</actor>  
+    </movie>
+
+    <movie>
+        <title>Inglourious Basterds</title>
+        <director>Quentin Tarantino</director>
+        <year>2009</year>
+        <genre>War</genre>
+        <duration>153</duration>
+        <rating>8.3</rating>
+        <language>English</language>
+        <actor>Brad Pitt</actor>  
+    </movie>
+
+    <movie>
+        <title>Elephant</title>
+        <director>Gus Van Sant</director>
+        <year>2003</year>
+        <genre>Crime</genre>
+        <duration>81</duration>
+        <rating>7.2</rating>
+        <language>English</language>
+        <actor>John Robinson</actor>
+    </movie>
+
+    <movie>
+        <title>Ad Astra</title>
+        <director>James Gray</director>
+        <year>2019</year>
+        <genre>Adventure</genre>
+        <duration>123</duration>
+        <rating>6.5</rating>
+        <language>English</language>
+        <actor>Tommy Lee Jones</actor>         
+    </movie>
+
+    <movie>
+        <title>The Batman</title>
+        <director>Matt Reeves</director>
+        <year>2022</year>
+        <genre>Action</genre>
+        <duration>176</duration>
+        <rating>7.9</rating>
+        <language>English</language>
+        <actor>Zoe Kravitz</actor>    
+    </movie>
+
+    <movie>
+        <title>Black Swan</title>
+        <director>Darren Aronofsky</director>
+        <year>2010</year>
+        <genre>Thriller</genre>
+        <duration>108</duration>
+        <rating>8.0</rating>
+        <language>English</language>
+        <actor>Vincent Cassel</actor>
+    </movie>
+
+    <movie>
+        <title>Mean Girls</title>
+        <director>Mark Waters</director>
+        <year>2004</year>
+        <genre>Teen</genre>
+        <duration>97</duration>
+        <rating>7.1</rating>
+        <language>English</language>
+        <actor>Lindsay Lohan</actor>
+    </movie>
+
+    <movie>
+        <title>Akira</title>
+        <director>Katsuhiro Otomo</director>
+        <year>1988</year>
+        <genre>Animation</genre>
+        <duration>124</duration>
+        <rating>8.0</rating>
+        <language>Japanese</language>
+        <actor>Mitsuo Iwata</actor>   
+    </movie>
+
+    <movie>
+        <title>Amores Perros</title>
+        <director>Alejandro González Iñárritu</director>
+        <year>2000</year>
+        <genre>Drama</genre>
+        <duration>154</duration>
+        <rating>8.1</rating>
+        <language>Spanish</language>
+        <actor>Goya Toledo</actor>    
     </movie>
 </movies>

@@ -1,6 +1,5 @@
 import ply.yacc as yacc
 
-# Grammar rules
 from lexer import tokens
 
 def p_document(p):
@@ -13,18 +12,14 @@ def p_document(p):
 
 def p_prologue(p):
     '''prologue : LT QMARK NAME NAME EQUALS STRING QMARK GT'''
-    # p[0] = ('prologue', {p[3]: p[6]})
 
 def p_element(p):
     '''element : LT NAME attributes GT content LT SLASH NAME GT
                | LT NAME GT content LT SLASH NAME GT
                | LT NAME attributes GT SLASH GT'''
 
-    if len(p) == 9:
-        # p[0] = (p[2], p[4])
-        p[0] = (p[4])
-    elif len(p) == 8:
-        p[0] = (p[4])
+    if(p[2] == "movie"):
+        p[0] = [p[4]]
     else:
         p[0] = p[4]
 
@@ -42,16 +37,17 @@ def p_content(p):
                | TEXT
                | element
                | '''
-    if len(p) == 1:  # Empty content
+    if len(p) == 1:
         p[0] = []
-    elif len(p) == 2:  # Single TEXT or element
-        p[0] = p[1]
-    else:  # Multiple TEXT or elements
-        # p[0] = p[1], p[2]
-        p[0] = p[1] + "," + p[2]
+    elif len(p) == 2:
+        if(type(p[1]) == str):
+            p[0] = [p[1]]
+        else:
+            p[0] = p[1]
+    else:
+        p[0] = p[1] + p[2]
 
 def p_error(p):
     print(f"Syntax error at {p.value if p else 'EOF'}")
 
-# Create the parser
 parser = yacc.yacc()

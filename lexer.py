@@ -11,10 +11,9 @@ t_SLASH = r'/'
 t_EQUALS = r'='
 t_QMARK = r'\?'
 
-# # Quoted strings for attributes
 def t_STRING(t):
     r'"([^"]+)"'
-    t.value = t.value[1:-1]  # Remove quotes
+    t.value = t.value[1:-1]
     return t
 
 # Text content
@@ -22,12 +21,10 @@ def t_TEXT(t):
     r'(?<=>)[^><]+(?=<)'
     return t
 
-# Tag names and attribute names
 def t_NAME(t):
     r'[a-zA-Z_][a-zA-Z0-9_-]*'
     return t
 
-# Ignoring spaces and newlines
 t_ignore = ' \n'
 
 def t_error(t):
@@ -35,16 +32,3 @@ def t_error(t):
     t.lexer.skip(1)
 
 lexer = lex.lex()
-
-# def read_xml_file(file_path):
-#     """Reads an XML file and returns its content as a string."""
-#     with open(file_path, 'r') as file:
-#         return file.read()
-
-# file_path = "file.xml"  # Update this path if necessary
-# xml_content = read_xml_file(file_path)
-
-# print("\n=== Tokenizing XML ===")
-# lexer.input(xml_content)
-# for token in lexer:
-#     print(token)
